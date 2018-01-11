@@ -6,28 +6,23 @@ html {
 
 .container {
   display: flex;
-  width: 1060px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 header {
   display: block;
-  height: 30rem;
-  background-image: url(../images/glasses-bg.png);
-  background-size: cover;
-  background-position: center;
-  padding-top: 1rem;
+  height: 30rem; 
 }
 
 #nav {
   justify-content: space-between;
   align-items: center;
-  background-color: cadetblue;
+  background-color: #ffffff;
   padding: 1rem 2rem;
 }
 
 #nav img {
-  height: 1.5rem;
+  height: 6rem;
 }
 
 .logo {
@@ -35,136 +30,47 @@ header {
   align-items: center;
 }
 
-h1 {
-  font-size: 1rem;
-  font-weight: normal;
-  display: inline;
-  margin-left: 1rem;
-  color: white;
-}
-
 nav li {
   display: inline;
   list-style: none;
   margin-right: 2rem;
-  color: white;
+  color: #399;
+}
+
+nav li:hover {
+	color: #066;
 }
 
 nav.mobile {
   display: none;
 }
 
-#caption {
-  justify-content: flex-end;
-}
-
-.caption {
-  background-color: white;
-  padding: 1.5rem 5rem;
-  margin-top: 10rem;
-  margin-right: -2rem;
-}
-
-.caption p {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 1.2;
-}
-
-#services {
-  justify-content: center;
-  padding: 3rem 0;
-}
-
-.service {
-  height: 8rem;
-  width: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.service img {
-  width: 3.5rem;
-}
-
-.service p {
-  text-align: center;
-  margin: 0;
-}
-
-#fitting {
-  margin: 0 6rem;
-}
-
-#phil-appt {
-  justify-content: left;
-}
-
-.note {
-  width: 35%;
-  margin: 0 5%;
-}
-
-
-h2 {
-  color: white;
-  background-color: cadetblue;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  display: inline-block;
-  width: 10rem;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  padding-left: 1.25rem;
-}
-
 footer {
-  margin-top: 5rem;
-  padding: 4rem;
-  background-color: azure;
+  padding: 1rem;
+  background-color: #9dd9d3;
+  color: #ffffff;
 }
 
 footer img {
-  height: 1.5rem;
+	height: 5rem;
+	margin-top: 1rem;
 }
 
-footer p {
-  margin: 0;
-  padding-left: 1rem;
+footer .container {
+	justify-content: space-between;
 }
 
 @media only screen and (max-width: 960px) {
-  .container {
-    width: 100%;
-  }
   header {
     height: 22rem;
     padding-top: 0;
   }
-  .caption {
-    padding: .75rem 4rem;
-    margin-top: 5rem;
-    margin-right: 2rem;
-  }
-
-  .caption p {
-    font-size: 1.33rem;
-  }
-
 }
 
 @media only screen and (max-width: 700px) {
   header {
     height: 17rem;
     background-position: 20%;
-  }
-
-  .logo h1 {
-    display: none;
   }
 
   header nav.default {
@@ -174,65 +80,4 @@ footer p {
   header nav.mobile {
     display: block;
   }
-
-  .caption {
-    padding: .25rem 0;
-    margin-top: 9rem;
-    margin-right: 0;
-    width: 100%;
-  }
-
-  .caption p {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  #services {
-    flex-direction: column;
-    align-items: center;
-    padding: 3.77rem 0;
-  }
-
-  .service {
-    font-size: .77rem;
-    justify-content: center;
-  }
-
-  .service img {
-    width: 3.5rem;
-    margin-bottom: 1.54rem;
-  }
-
-  #fitting {
-    margin: 1.54rem 0;
-  }
-
-  #phil-appt {
-    flex-wrap: wrap;
-  }
-
-  .note {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 4rem;
-
-  }
-
-  .note p {
-    font-size: .77rem;
-    margin-top: 1rem;
-  }
-
-  h2 {
-    width: 100%;
-  }
-
-  footer .container {
-    justify-content: center;
-  }
-
-  footer p {
-    display: none;
-  }
-
 }
