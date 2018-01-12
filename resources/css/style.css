@@ -2,11 +2,13 @@ html {
   font-family: Helvetica;
   font-size: 18px;
   line-height: 1.4;
+  background-color: #9dd9d3;
 }
 
 .container {
   display: flex;
-  width: 100%;
+  width: 98%;
+  margin: 0 auto;
 }
 
 /*HEADER STYLES*/
@@ -18,11 +20,12 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  padding: 1rem 2rem;
+  padding: 1rem;
+	
 }
 
 #nav img {
-  height: 6rem;
+  height: 4rem;
 }
 
 .logo {
@@ -33,9 +36,9 @@ header {
 nav li {
   display: inline;
   list-style: none;
-  margin-right: 2rem;
   color: #399;
   font-weight: bold;
+  margin-left: 1rem;
 }
 
 nav li:hover {
@@ -47,39 +50,36 @@ nav.mobile {
 }
 
 
-/*BODY STYLES*/
+/*CAROUSEL STYLES*/
+
+.carousel {
+	margin: auto;
+	
+	width: 50%;
+}
+
+.frame {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	width: 100%;
+}
 
 .office {
-	width: 75%;
-	margin: 0 auto;
-	padding: 1rem;
-	text-align: center;
-	
+	width: 40rem;
 }
+
 .office img {
-	height: 6rem;
+	height: 25rem;
+	margin: 0 auto;
 }
 
-#cfd {
-	background-color: #399;
-}
 
-#occ {
-	background-color: #005daa;
-}
 
-#orcd {
-	background-color: #C60;
-}
-
-#owc {
-	background-color: #91278f;
-}
 
 /*FOOTER STYLES*/
 footer {
   padding: 1rem;
-  background-color: #9dd9d3;
+  background-color: #399;
   color: #ffffff;
 }
 
