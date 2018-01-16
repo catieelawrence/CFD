@@ -5,6 +5,7 @@ $(document).ready(function () {
 		autoplay: true,
 		autoplaySpeed: 3000,
 		dots: true,
-		fade: true
+		fade: true,
+		arrows: false
  });
 });

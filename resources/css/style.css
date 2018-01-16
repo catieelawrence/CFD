@@ -1,8 +1,8 @@
 html {
   font-family: Helvetica;
   font-size: 18px;
+  color: #505050;
   line-height: 1.4;
-  background-color: #9dd9d3;
 }
 
 .container {
@@ -14,14 +14,17 @@ html {
 /*HEADER STYLES*/
 header {
   display: block;
+  margin-top: 6rem;
 }
 
 #nav {
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,0.70);
   padding: 1rem;
-	
+	 position: fixed;
+	z-index: 10;
+	top: 0;
 }
 
 #nav img {
@@ -51,17 +54,17 @@ nav.mobile {
 
 
 /*CAROUSEL STYLES*/
-
+.banner {
+	background-color: #DCDCDC;
+}
 .carousel {
-	margin: auto;
-	
 	width: 50%;
+	margin: 0 auto;
 }
 
 .frame {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
 	width: 100%;
+	margin: 0 auto;
 }
 
 .office {
@@ -69,17 +72,82 @@ nav.mobile {
 }
 
 .office img {
-	height: 25rem;
-	margin: 0 auto;
+	height: 30rem;
+	margin: 1rem auto;
 }
 
 
+/*WHATS NEW STYLES*/
+.center {
+	justify-content: center;
+}
+
+h2 {
+	color: #505050;
+	font-size: 1.75rem;
+}
+
+h3 {
+	color: #505050;
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+
+.box {
+	background-color: #DCDCDC;
+	width: 50%;
+	height: auto;
+	margin: 1rem;
+	text-align: center;
+}
+
+.cfd {
+	background-color: rgba(51,153,153,.4);
+}
+.occ {
+	background-color: rgba(0,93,170,.4);
+}
+.orcd {
+	background-color: rgba(204,102,0,.4);
+}
+.gsd {
+	background-color: rgba(236,193,38,.4);
+}
+.pdd {
+	background-color: rgba(92,102,112,.4);
+}
+.owc {
+	background-color: rgba(145,39,143,.4);
+}
+
+.center ul {
+	padding-left: 0;
+}
+
+.center li {
+	list-style: none;
+	margin: 1rem 2rem;
+	padding: 1rem;
+}
+
+#mission p {
+	margin: 2rem 10rem;
+	font-size: 1.25rem;
+}
+
+#mailing {
+	display: block;
+	background-color: #399;
+	color: white;
+	padding: 1rem 2rem;
+	border-radius: 15rem;
+}
 
 
 /*FOOTER STYLES*/
 footer {
   padding: 1rem;
-  background-color: #399;
+  background-color: #9dd9d3;
   color: #ffffff;
 }
 
