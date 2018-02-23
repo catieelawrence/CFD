@@ -22,4 +22,12 @@ $(document).ready(function () {
 	    $(this).find("ul").removeClass("menu-show");
 	  }
 	 );
+
+	 $("#mobile").hide();
+
+	 $(".mobile").click(
+		 function() {
+			 $("#mobile").slideToggle()
+		 }
+	 );
 });

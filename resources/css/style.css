@@ -5,6 +5,10 @@ html {
   line-height: 1.4;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   display: flex;
   width: 98%;
@@ -57,7 +61,6 @@ button {
 }
 
 .menu-show {
-  list-style: none;
   padding-left: 0;
   width: 120px;
   text-align: center;
@@ -96,6 +99,36 @@ nav a:hover {
 nav.mobile {
   display: none;
   list-style: none;
+}
+
+#mobile {
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 30;
+  background-color: rgba(51,153,153,0.7);
+}
+
+#mobile li {
+  display: block;
+  border: 1px solid black;
+  height: 40px;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+#mobile li:hover {
+  background-color: #066;
+}
+
+#mobile a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+#mobile a:hover {
+  text-decoration: underline;
 }
 
 /*CAROUSEL STYLES*/
