@@ -8,9 +8,9 @@
     <script src="https://use.fontawesome.com/00db143679.js"></script>
     <link rel="stylesheet" type="text/css" href="resources/slick-1.8.0/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="resources/slick-1.8.0/slick/slick-theme.css"/>
-	<link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
+	  <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
   </head>
-  
+
   <body>
     <header>
       <div class="container" id="nav">
@@ -18,19 +18,86 @@
           <img src="resources/images/logos/CFD-logo.gif" alt="CFD logo">
         </div>
         <nav class="default">
-            <li>About</li>
-            <li>Events &amp; Programs</li>
-            <li>Funding &amp; Awards</li>
-            <li>Career Resources</li>
-            <li>Work-Life Resources</li>
-            <li>Other Resources</li>
+          <div class="about all">
+            <button type="button" id="about">About</button>
+            <ul class="menu-hide">
+              <li><a href="#">Meet the Staff</a></li>
+              <li><a href="#">What We Do</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Support Us</a></li>
+              <li><a href="#">Mailing List</a></li>
+            </ul>
+          </div>
+          <div class="events all">
+            <button type="button" id="events">Events and Programs</button>
+            <ul class="menu-hide">
+              <li><a href="#">Within MGH</a></li>
+              <li><a href="#">Outside MGH</a></li>
+              <li><a href="#">Recorded Events</a></li>
+              <li><a href="#">Past Events &amp; Programs</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right fa-xs"></i>Academic Year 2016-17</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right fa-xs"></i>Academic Year 2015-16</a></li>
+            </ul>
+          </div>
+          <div class="funding all">
+            <button type="button" id="funding">Funding &amp; Awards</button>
+            <ul class="menu-hide">
+              <li><a href="#">CFD Travel Awards</a></li>
+              <li><a href="#">Claflin Awards</a></li>
+              <li><a href="#">Eleanor &amp; Miles Shore Program</a></li>
+              <li><a href="#">HMS Foundation Funds</a></li>
+              <li><a href="#">Minority Faculty Development Awards</a></li>
+              <li><a href="#">Other Grants &amp; Awards</a></li>
+            </ul>
+          </div>
+          <div class="career all">
+            <button type="button" id="career">Career Resources</button>
+            <ul class="menu-hide">
+              <li><a href="#">Annual Career Conference</a></li>
+              <li><a href="#">Career Advice</a></li>
+              <li><a href="#">Continuing Education</a></li>
+              <li><a href="#">Curriculum Vitae</a></li>
+              <li><a href="#">Faculty Involvement Opportunities</a></li>
+              <li><a href="#">Mentoring</a></li>
+              <li><a href="#">New Faculty Orientation</a></li>
+              <li><a href="#">Promotion</a></li>
+              <li><a href="#">Other Career Resources</a></li>
+            </ul>
+          </div>
+          <div class="life all">
+            <button type="button" id="life">Work-Life Resources</button>
+            <ul class="menu-hide">
+              <li><a href="#">Child Care</a></li>
+              <li><a href="#">MGH EAP</a></li>
+              <li><a href="#">Employment Opportunities</a></li>
+              <li><a href="#">Partners Housing Search</a></li>
+              <li><a href="#">Maternity Leave Policy</a></li>
+              <li><a href="#">Professional Staff Benefits</a></li>
+            </ul>
+          </div>
+          <div class="other all">
+            <button type="button" id="other">Other Resources</button>
+            <ul class="menu-hide">
+              <li><a href="#">Academic Coordinators</a></li>
+              <li><a href="#">AAMC</a></li>
+              <li><a href="#">Careers in Medicine &amp; Science</a></li>
+              <li><a href="#">CFD Newsletters</a></li>
+              <li><a href="#">Department Chair Resources</a></li>
+              <li><a href="#">Search Committee Resources</a></li>
+              <li><a href="#">HMS Links</a></li>
+              <li><a href="#">Library Resources</a></li>
+              <li><a href="#">MGH Diversity &amp; Inclusion</a></li>
+              <li><a href="#">Partners International Office</a></li>
+              <li><a href="#">Teaching Resources</a></li>
+            </ul>
+          </div>
         </nav>
         <nav class="mobile">
           <li><i class="fa fa-bars fa-3x" aria-hidden="true"></i></li>
         </nav>
-      </div>          
+      </div>
     </header>
-	  
+
     <div class="banner">
 		<div class="carousel">
 			<div class="frame">
@@ -49,15 +116,15 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="container center" id="mission">
 		<p>The Center for Faculty Development (CFD) was established to facilitate career development of MGH faculty and trainees. This umbrella organization addresses all aspects of faculty development, as well as specializing on the clinical faculty through the Office for Clinical Careers (OCC), the research community through the Office for Research Career Development (ORCD), Graduate Student Division (GSD) and Post Doctoral Division (PDD) and the women faculty through the Office for Women's Careers (OWC).</p>
 	</div>
-	
+
 	<div class="container center">
 		<h2>What's New</h2>
 	</div>
-	  
+
 	<div class="container center">
 		<div class="box">
 			<h3>Upcomng Events</h3>
@@ -76,11 +143,12 @@
 			</ul>
 		</div>
 	</div>
-	
+
 	<div class="container center">
-		<h2 id="mailing">Join Our Mailing List</h2>
+    <div class="icon"></div>
+		<h2 id="mailing"><i class="fa fa-envelope"></i> Join Our Mailing List</h2>
 	</div>
-	
+
     <footer>
     	<div class="container">
 			<p>
@@ -88,11 +156,11 @@
 			55 Fruit Street, Bulfinch 370, Boston, MA 02114 <br>
 			Tel: 617.724.0818 | Fax: 617.726.0568
 			</p>
-   			<img src="resources/images/logos/MGH-approved-logo.gif" alt="">
+   		<img src="resources/images/logos/MGH-approved-logo.gif" alt="MGH logo">
     	</div>
-    	
-  		
-  		
+
+
+
    </footer>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script type="text/javascript" src="resources/slick-1.8.0/slick/slick.min.js"></script>

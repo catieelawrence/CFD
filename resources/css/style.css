@@ -14,15 +14,15 @@ html {
 /*HEADER STYLES*/
 header {
   display: block;
-  margin-top: 6rem;
 }
 
 #nav {
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   background-color: rgba(255,255,255,0.70);
   padding: 1rem;
-	 position: fixed;
+	position: fixed;
+  height: 4rem;
 	z-index: 10;
 	top: 0;
 }
@@ -36,29 +36,76 @@ header {
   align-items: center;
 }
 
-nav li {
-  display: inline;
-  list-style: none;
-  color: #399;
-  font-weight: bold;
-  margin-left: 1rem;
+.all {
+  display: inline-block;
+  float: left;
+  margin-right: 1.25rem;
+  margin-top: 1rem;
+  height: auto;
+  width: 120px;
+  z-index: 20;
 }
 
-nav li:hover {
-	color: #066;
+button {
+  width: 120px;
+  height: 40px;
+  vertical-align: top;
+  background-color: #399;
+  border-radius: .25rem;
+  color: #fff;
+  font-size: .75rem;
+}
+
+.menu-show {
+  list-style: none;
+  padding-left: 0;
+  width: 120px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 0;
+}
+
+.menu-hide {
+  display: none;
+}
+
+.menu-show li  {
+  height: auto;
+  padding: 2px;
+  font-size: .75rem;
+  padding-top: .25rem;
+  background-color: #FFF;
+  border-top: .5px solid #DCDCDC;
+}
+
+.menu-show li:hover {
+  color: #FFF;
+  background-color: #399;
+}
+
+nav a {
+  color: #399;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #FFF;
+  text-decoration: none;
 }
 
 nav.mobile {
   display: none;
+  list-style: none;
 }
-
 
 /*CAROUSEL STYLES*/
 .banner {
 	background-color: #DCDCDC;
+  margin-top: 6rem;
 }
+
 .carousel {
-	width: 50%;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -68,7 +115,7 @@ nav.mobile {
 }
 
 .office {
-	width: 40rem;
+	width: 100%;
 }
 
 .office img {
@@ -95,7 +142,7 @@ h3 {
 
 .box {
 	background-color: #DCDCDC;
-	width: 50%;
+  width: 50%;
 	height: auto;
 	margin: 1rem;
 	text-align: center;
@@ -131,28 +178,34 @@ h3 {
 }
 
 #mission p {
-	margin: 2rem 10rem;
+	margin: 1rem;
+  max-width: 75%;
 	font-size: 1.25rem;
 }
 
 #mailing {
 	display: block;
 	background-color: #399;
+  text-align: center;
 	color: white;
-	padding: 1rem 2rem;
-	border-radius: 15rem;
+  width: 20rem;
+	padding: 1rem;
+	border-radius: 1.5rem;
 }
 
+#mailing:hover {
+  background-color: #066;
+}
 
 /*FOOTER STYLES*/
 footer {
   padding: 1rem;
   background-color: #9dd9d3;
-  color: #ffffff;
 }
 
 footer img {
 	height: 5rem;
+  width: auto;
 	margin-top: 1rem;
 }
 
@@ -160,24 +213,52 @@ footer .container {
 	justify-content: space-between;
 }
 
-@media only screen and (max-width: 960px) {
-  header {
-    height: 22rem;
-    padding-top: 0;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  header {
-    height: 17rem;
-    background-position: 20%;
-  }
-
+@media only screen and (max-width: 1100px) {
   header nav.default {
     display: none;
   }
-
   header nav.mobile {
     display: block;
+    margin-right: 3rem;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .office img {
+  	height: 20rem;
+  }
+  .center {
+    flex-wrap: wrap;
+  }
+  .box {
+    min-width: 90%;
+  }
+  footer .container {
+  	justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media only screen and (max-width: 550px) {
+  .office img {
+    height: 15rem;
+  }
+  #mission p {
+  	font-size: 1rem;
+    margin: 1rem;
+    max-width: 100%;
+  }
+  #mailing {
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 0;
+  }
+  footer p {
+    font-size: .75rem;
+  }
+  footer img {
+    height: 3.5rem;
+    width: auto;
   }
 }
